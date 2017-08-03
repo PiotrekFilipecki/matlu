@@ -1,0 +1,64 @@
+$header-h1: #fff;
+$header-li: #aaa;
+$header-li-active: #ed2528;
+$header-bg: #121416;
+.nav{
+   display: flex;
+}
+
+.header{
+    background: $header-bg;
+    display: block;
+    position: relative;
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
+    width:100%;
+    margin: 0 auto;
+    
+    
+}
+ 
+
+
+.welcome{
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+
+    h1{
+        color: $header-h1;
+        padding-left: 2em;
+    }
+}
+
+.navigation{
+    
+    -webkit-flex: 2 0 0;
+    flex: 2 0 0;
+    width: 80%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    li{
+        margin-left: 5%;
+        &:first-of-type{
+            margin-left: 0;
+        }
+        a{
+            text-decoration: none;
+            color: $header-li;
+            transition: 0.75s ease all;
+
+            &:hover{
+                color: $header-li-active
+            }
+        }  
+    }
+}
